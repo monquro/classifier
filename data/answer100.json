@@ -1,0 +1,802 @@
+[
+ {
+  "id": "R02",
+  "text": "가족 결합 할인이 이번 달부터 빠졌던데 저희는 해지 신청한 적이 없습니다.",
+  "category": "요금",
+  "sentiment": "부정",
+  "urgency": "보통",
+  "note": "해지 단어가 있으나 해지 의사가 아니다"
+ },
+ {
+  "id": "R04",
+  "text": "같은 금액이 카드에서 두 번 빠져나갔어요. 이중 결제 같습니다.",
+  "category": "요금",
+  "sentiment": "부정",
+  "urgency": "높음",
+  "note": "금전 피해 진행 중"
+ },
+ {
+  "id": "R15",
+  "text": "청소년 요금제는 몇 살까지 쓸 수 있나요?",
+  "category": "요금",
+  "sentiment": "중립",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "R18",
+  "text": "선택약정이랑 공시지원금 중에 뭐가 더 이득이에요?",
+  "category": "요금",
+  "sentiment": "중립",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "R20",
+  "text": "지난달 쓴 데이터가 3GB인데 왜 무제한 요금이 청구됐죠",
+  "category": "요금",
+  "sentiment": "부정",
+  "urgency": "보통",
+  "note": ""
+ },
+ {
+  "id": "R26",
+  "text": "아이 폰 요금이 제 요금보다 더 많이 나와요. 이상하지 않나요?",
+  "category": "요금",
+  "sentiment": "부정",
+  "urgency": "보통",
+  "note": ""
+ },
+ {
+  "id": "R27",
+  "text": "환불해 주신다고 한 지 한 달이 됐는데 아직 안 들어왔습니다.",
+  "category": "요금",
+  "sentiment": "부정",
+  "urgency": "높음",
+  "note": "약속한 환불 지연 — 금전"
+ },
+ {
+  "id": "R28",
+  "text": "알뜰 요금제로 바꾸고 나서 한 달에 2만 원씩 아끼고 있어요 👍",
+  "category": "요금",
+  "sentiment": "긍정",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "R30",
+  "text": "해외 결제한 게 통신요금으로 청구된 것 같은데 제가 한 게 아닙니다.",
+  "category": "요금",
+  "sentiment": "부정",
+  "urgency": "높음",
+  "note": "도용 의심 — 금전"
+ },
+ {
+  "id": "R33",
+  "text": "요금 안내 문자를 좀 알아보기 쉽게 보내 주시면 좋겠습니다.",
+  "category": "요금",
+  "sentiment": "중립",
+  "urgency": "낮음",
+  "note": "제안"
+ },
+ {
+  "id": "R37",
+  "text": "통화 요금이 무제한인 줄 알았는데 영상통화는 별도였네요... 몰랐어요",
+  "category": "요금",
+  "sentiment": "부정",
+  "urgency": "보통",
+  "note": ""
+ },
+ {
+  "id": "R40",
+  "text": "이번 달 청구서 금액이 앱에 나온 금액이랑 달라요. 어느 게 맞나요?",
+  "category": "요금",
+  "sentiment": "중립",
+  "urgency": "보통",
+  "note": "앱 표시 문제일 수도 — 대상은 청구 금액"
+ },
+ {
+  "id": "R41",
+  "text": "부가세 포함 금액인지 아닌지 헷갈리게 써 놨네요",
+  "category": "요금",
+  "sentiment": "부정",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "R44",
+  "text": "요금 연체돼서 발신이 막혔는데 지금 바로 납부하면 언제 풀리나요?",
+  "category": "요금",
+  "sentiment": "중립",
+  "urgency": "높음",
+  "note": "사용 불가 상태"
+ },
+ {
+  "id": "R47",
+  "text": "요금 계산 좀 해 주세요. 가족 셋이 같이 쓰면 얼마예요?",
+  "category": "요금",
+  "sentiment": "중립",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "R48",
+  "text": "요금 인상 안내를 받았는데 동의한 적은 없습니다.",
+  "category": "요금",
+  "sentiment": "부정",
+  "urgency": "보통",
+  "note": ""
+ },
+ {
+  "id": "R50",
+  "text": "청구서에 적힌 할인 금액이 맞는지 한 번만 확인해 주세요. 박서연 고객입니다.",
+  "category": "요금",
+  "sentiment": "중립",
+  "urgency": "보통",
+  "note": "개인정보(이름) 포함"
+ },
+ {
+  "id": "Q01",
+  "text": "통화 중에 자꾸 끊겨요. 하루에 대여섯 번은 끊깁니다.",
+  "category": "품질",
+  "sentiment": "부정",
+  "urgency": "높음",
+  "note": ""
+ },
+ {
+  "id": "Q03",
+  "text": "집 안에서는 5G가 안 잡히고 LTE로만 떠요.",
+  "category": "품질",
+  "sentiment": "부정",
+  "urgency": "보통",
+  "note": ""
+ },
+ {
+  "id": "Q05",
+  "text": "요즘 속도가 확실히 빨라졌네요. 영상이 안 끊겨서 좋아요.",
+  "category": "품질",
+  "sentiment": "긍정",
+  "urgency": "낮음",
+  "note": "부정 단어(안 끊겨)가 긍정으로 쓰였다"
+ },
+ {
+  "id": "Q06",
+  "text": "회사 건물 3층에서만 신호가 약해요. 중계기 설치 요청드립니다.",
+  "category": "품질",
+  "sentiment": "중립",
+  "urgency": "보통",
+  "note": ""
+ },
+ {
+  "id": "Q12",
+  "text": "상대방 목소리가 로봇처럼 들려요. 지직거리고.",
+  "category": "품질",
+  "sentiment": "부정",
+  "urgency": "보통",
+  "note": ""
+ },
+ {
+  "id": "Q16",
+  "text": "해외에서 로밍이 안 잡혀서 업무를 하나도 못 했습니다.",
+  "category": "품질",
+  "sentiment": "부정",
+  "urgency": "높음",
+  "note": "로밍 불통 — 품질"
+ },
+ {
+  "id": "Q18",
+  "text": "통화는 되는데 데이터만 안 돼요. 재부팅해도 똑같아요.",
+  "category": "품질",
+  "sentiment": "부정",
+  "urgency": "높음",
+  "note": "데이터 불통"
+ },
+ {
+  "id": "Q21",
+  "text": "통화 품질이 너무 훌륭해서 눈물이 나네요. 3초마다 끊겨 주시고.",
+  "category": "품질",
+  "sentiment": "부정",
+  "urgency": "높음",
+  "note": "비꼬는 말"
+ },
+ {
+  "id": "Q23",
+  "text": "요즘은 끊기는 일이 거의 없네요. 개선해 주셔서 감사합니다.",
+  "category": "품질",
+  "sentiment": "긍정",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "Q25",
+  "text": "영상통화가 자꾸 멈춰요.",
+  "category": "품질",
+  "sentiment": "부정",
+  "urgency": "보통",
+  "note": ""
+ },
+ {
+  "id": "Q26",
+  "text": "기지국 공사한다던데 언제 끝나요? 그동안 신호가 너무 약해요.",
+  "category": "품질",
+  "sentiment": "중립",
+  "urgency": "보통",
+  "note": ""
+ },
+ {
+  "id": "Q32",
+  "text": "데이터가 느려서 카드 결제 단말기가 자꾸 오류가 납니다.",
+  "category": "품질",
+  "sentiment": "부정",
+  "urgency": "높음",
+  "note": "영업 지장"
+ },
+ {
+  "id": "Q33",
+  "text": "인터넷 전화처럼 소리가 울려요",
+  "category": "품질",
+  "sentiment": "부정",
+  "urgency": "보통",
+  "note": ""
+ },
+ {
+  "id": "Q35",
+  "text": "010-9876-5432 이 번호 수신이 안 됩니다. 이영호입니다. 빨리 연락 주세요.",
+  "category": "품질",
+  "sentiment": "부정",
+  "urgency": "높음",
+  "note": "개인정보 포함 · 수신 불가"
+ },
+ {
+  "id": "Q40",
+  "text": "통화 연결음이 너무 길어요. 한참 있다가 연결됩니다.",
+  "category": "품질",
+  "sentiment": "부정",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "Q43",
+  "text": "통화는 괜찮고 데이터도 괜찮은데 가끔 문자가 두 번씩 와요.",
+  "category": "품질",
+  "sentiment": "중립",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "Q50",
+  "text": "기지국 위치 좀 알 수 있을까요? 신호 세기 때문에요.",
+  "category": "품질",
+  "sentiment": "중립",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "S03",
+  "text": "대리점에서 필요 없는 부가서비스를 잔뜩 가입시켰어요.",
+  "category": "서비스",
+  "sentiment": "부정",
+  "urgency": "보통",
+  "note": "요금 피해로 이어짐 — 대상은 대리점 응대"
+ },
+ {
+  "id": "S07",
+  "text": "매장 직원분이 요금제 비교를 꼼꼼하게 해 주셔서 좋았습니다.",
+  "category": "서비스",
+  "sentiment": "긍정",
+  "urgency": "낮음",
+  "note": "요금 언급 — 칭찬 대상은 직원"
+ },
+ {
+  "id": "S10",
+  "text": "처리됐다고 문자가 왔는데 실제로는 아무것도 안 바뀌었어요.",
+  "category": "서비스",
+  "sentiment": "부정",
+  "urgency": "보통",
+  "note": ""
+ },
+ {
+  "id": "S11",
+  "text": "대리점에서 개통 당일 설명을 제대로 안 해 줬어요.",
+  "category": "서비스",
+  "sentiment": "부정",
+  "urgency": "보통",
+  "note": ""
+ },
+ {
+  "id": "S12",
+  "text": "채팅 상담 빠르고 좋네요.",
+  "category": "서비스",
+  "sentiment": "긍정",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "S13",
+  "text": "상담원이 반말을 했습니다. 너무 불쾌합니다.",
+  "category": "서비스",
+  "sentiment": "부정",
+  "urgency": "높음",
+  "note": "응대 태도 — 민원 가능성"
+ },
+ {
+  "id": "S18",
+  "text": "상담 예약했는데 그 시간에 아무도 전화 안 했어요.",
+  "category": "서비스",
+  "sentiment": "부정",
+  "urgency": "보통",
+  "note": ""
+ },
+ {
+  "id": "S23",
+  "text": "상담원 연결이 이렇게 빠를 줄 몰랐네요 ㅎㅎ",
+  "category": "서비스",
+  "sentiment": "긍정",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "S27",
+  "text": "상담 받고 나니까 오히려 더 헷갈리네요.",
+  "category": "서비스",
+  "sentiment": "부정",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "S29",
+  "text": "이메일 문의는 며칠 안에 답이 오나요?",
+  "category": "서비스",
+  "sentiment": "중립",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "S33",
+  "text": "매장에서 줄을 한참 섰어요.",
+  "category": "서비스",
+  "sentiment": "부정",
+  "urgency": "보통",
+  "note": ""
+ },
+ {
+  "id": "S34",
+  "text": "방문 기사님께 음료수라도 드리고 싶은데 괜찮을까요?",
+  "category": "서비스",
+  "sentiment": "긍정",
+  "urgency": "낮음",
+  "note": "감사 표현"
+ },
+ {
+  "id": "S35",
+  "text": "고객센터 직원분들 고생 많으십니다.",
+  "category": "서비스",
+  "sentiment": "긍정",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "S36",
+  "text": "처리 결과를 문자로라도 알려 주시면 좋겠어요.",
+  "category": "서비스",
+  "sentiment": "중립",
+  "urgency": "낮음",
+  "note": "제안"
+ },
+ {
+  "id": "S40",
+  "text": "상담원이 해지 방어만 하고 제 문제는 안 들어줘요.",
+  "category": "서비스",
+  "sentiment": "부정",
+  "urgency": "보통",
+  "note": "해지 단어가 있으나 불만 대상은 상담 태도 — 판단이 갈린다"
+ },
+ {
+  "id": "S42",
+  "text": "AS 센터 위치가 너무 멀어요.",
+  "category": "서비스",
+  "sentiment": "부정",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "S48",
+  "text": "대리점 직원 말만 믿고 바꿨는데 설명과 완전히 달랐습니다. 책임지세요.",
+  "category": "서비스",
+  "sentiment": "부정",
+  "urgency": "높음",
+  "note": ""
+ },
+ {
+  "id": "A01",
+  "text": "앱 로그인이 계속 안 돼요. 비밀번호를 바꿔도 똑같아요.",
+  "category": "앱기능",
+  "sentiment": "부정",
+  "urgency": "보통",
+  "note": ""
+ },
+ {
+  "id": "A03",
+  "text": "업데이트 후에 앱이 켜지자마자 꺼집니다.",
+  "category": "앱기능",
+  "sentiment": "부정",
+  "urgency": "높음",
+  "note": "앱 사용 불가"
+ },
+ {
+  "id": "A12",
+  "text": "앱으로 멤버십 바코드 보여 주려는데 로딩만 계속 돌아요. 계산대 앞에서 민망했습니다.",
+  "category": "앱기능",
+  "sentiment": "부정",
+  "urgency": "보통",
+  "note": "멤버십 — 기타로 볼 수도 · 문제는 앱 로딩"
+ },
+ {
+  "id": "A13",
+  "text": "앱에서 본인인증이 안 돼서 아무것도 못 하고 있어요.",
+  "category": "앱기능",
+  "sentiment": "부정",
+  "urgency": "높음",
+  "note": "사용 불가"
+ },
+ {
+  "id": "A17",
+  "text": "앱에 나오는 사용량이랑 실제 사용량이 달라요.",
+  "category": "앱기능",
+  "sentiment": "부정",
+  "urgency": "보통",
+  "note": ""
+ },
+ {
+  "id": "A21",
+  "text": "앱 채팅 상담 버튼을 눌러도 아무 반응이 없어요.",
+  "category": "앱기능",
+  "sentiment": "부정",
+  "urgency": "보통",
+  "note": "상담 — 문제는 버튼 동작"
+ },
+ {
+  "id": "A22",
+  "text": "앱에서 가족 회선 사용량도 같이 볼 수 있나요?",
+  "category": "앱기능",
+  "sentiment": "중립",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "A26",
+  "text": "앱 위젯에 데이터 잔여량 띄울 수 있게 해 주세요.",
+  "category": "앱기능",
+  "sentiment": "중립",
+  "urgency": "낮음",
+  "note": "제안"
+ },
+ {
+  "id": "A32",
+  "text": "앱이 태블릿에서는 화면이 깨져요.",
+  "category": "앱기능",
+  "sentiment": "부정",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "A34",
+  "text": "앱 검색 기능이 엉뚱한 결과만 보여 줘요.",
+  "category": "앱기능",
+  "sentiment": "부정",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "A35",
+  "text": "앱 덕분에 데이터 초과 안 하고 잘 관리하고 있어요.",
+  "category": "앱기능",
+  "sentiment": "긍정",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "A37",
+  "text": "앱 결제 수단에 간편결제 추가해 주세요.",
+  "category": "앱기능",
+  "sentiment": "중립",
+  "urgency": "낮음",
+  "note": "제안"
+ },
+ {
+  "id": "A42",
+  "text": "앱 개편 이후로 원하는 메뉴 찾는 데 5분 걸려요 ^^",
+  "category": "앱기능",
+  "sentiment": "부정",
+  "urgency": "보통",
+  "note": "비꼬는 말"
+ },
+ {
+  "id": "A43",
+  "text": "앱 알림 설정 저장이 안 돼요.",
+  "category": "앱기능",
+  "sentiment": "부정",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "A45",
+  "text": "앱에서 계약서 사본을 볼 수 있나요?",
+  "category": "앱기능",
+  "sentiment": "중립",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "A46",
+  "text": "앱 오류 때문에 로밍 신청을 못 했는데 공항입니다. 급해요!",
+  "category": "앱기능",
+  "sentiment": "부정",
+  "urgency": "높음",
+  "note": "긴급"
+ },
+ {
+  "id": "A47",
+  "text": "앱 화면 캡처가 막혀 있어요. 영수증 저장하려는데요.",
+  "category": "앱기능",
+  "sentiment": "부정",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "C03",
+  "text": "이번 달까지만 쓰고 해지할게요. 너무 실망했어요.",
+  "category": "해지관련",
+  "sentiment": "부정",
+  "urgency": "높음",
+  "note": ""
+ },
+ {
+  "id": "C05",
+  "text": "해지 방어 전화 그만 좀 하세요. 이미 결정했습니다.",
+  "category": "해지관련",
+  "sentiment": "부정",
+  "urgency": "높음",
+  "note": ""
+ },
+ {
+  "id": "C06",
+  "text": "부모님 명의 회선을 정리해야 합니다. 돌아가셔서요. 필요한 서류가 뭔가요?",
+  "category": "해지관련",
+  "sentiment": "중립",
+  "urgency": "보통",
+  "note": "사망에 따른 해지 — 감정은 중립으로 둔다"
+ },
+ {
+  "id": "C09",
+  "text": "해지 신청은 어디서 하나요? 매장에 꼭 가야 해요?",
+  "category": "해지관련",
+  "sentiment": "중립",
+  "urgency": "높음",
+  "note": ""
+ },
+ {
+  "id": "C17",
+  "text": "해지 전에 남은 데이터 쿠폰 쓸 수 있나요?",
+  "category": "해지관련",
+  "sentiment": "중립",
+  "urgency": "보통",
+  "note": ""
+ },
+ {
+  "id": "C18",
+  "text": "인터넷만 해지하고 휴대폰은 유지하고 싶어요.",
+  "category": "해지관련",
+  "sentiment": "중립",
+  "urgency": "보통",
+  "note": ""
+ },
+ {
+  "id": "C20",
+  "text": "지인 추천으로 다른 통신사로 옮기기로 했습니다. 그동안 감사했어요.",
+  "category": "해지관련",
+  "sentiment": "긍정",
+  "urgency": "높음",
+  "note": "해지 의사 · 감정은 긍정 — 긴급도와 감정은 따로 판단한다"
+ },
+ {
+  "id": "C21",
+  "text": "번호이동 했는데 기존 번호로 문자가 계속 와요.",
+  "category": "해지관련",
+  "sentiment": "부정",
+  "urgency": "보통",
+  "note": ""
+ },
+ {
+  "id": "C24",
+  "text": "알뜰폰으로 갈아타려고요. 유심만 바꾸면 되나요?",
+  "category": "해지관련",
+  "sentiment": "중립",
+  "urgency": "높음",
+  "note": ""
+ },
+ {
+  "id": "C28",
+  "text": "해지 확인서 발급 가능한가요?",
+  "category": "해지관련",
+  "sentiment": "중립",
+  "urgency": "보통",
+  "note": ""
+ },
+ {
+  "id": "C30",
+  "text": "해지 방어 상담원분이 너무 집요해요.",
+  "category": "해지관련",
+  "sentiment": "부정",
+  "urgency": "높음",
+  "note": "S40과 비슷하지만 해지 의사가 전제다"
+ },
+ {
+  "id": "C31",
+  "text": "장기 고객 혜택이 없으면 굳이 남을 이유가 없네요.",
+  "category": "해지관련",
+  "sentiment": "부정",
+  "urgency": "보통",
+  "note": "이탈 암시"
+ },
+ {
+  "id": "C36",
+  "text": "해지 관련 서류를 팩스로 보내라는 게 말이 되나요? 요즘 시대에.",
+  "category": "해지관련",
+  "sentiment": "부정",
+  "urgency": "보통",
+  "note": ""
+ },
+ {
+  "id": "C40",
+  "text": "해지 위약금 면제 조건이 있나요? 해외 발령이에요.",
+  "category": "해지관련",
+  "sentiment": "중립",
+  "urgency": "높음",
+  "note": ""
+ },
+ {
+  "id": "C46",
+  "text": "해지 후에도 제 개인정보가 남아 있나요? 삭제 요청합니다.",
+  "category": "해지관련",
+  "sentiment": "중립",
+  "urgency": "보통",
+  "note": "개인정보 삭제 요청"
+ },
+ {
+  "id": "C47",
+  "text": "해지한 지 석 달인데 아직도 광고 문자가 와요.",
+  "category": "해지관련",
+  "sentiment": "부정",
+  "urgency": "보통",
+  "note": ""
+ },
+ {
+  "id": "E01",
+  "text": "멤버십 영화 할인은 한 달에 몇 번까지 되나요?",
+  "category": "기타",
+  "sentiment": "중립",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "E03",
+  "text": "가까운 매장이 어디 있는지 알려 주세요.",
+  "category": "기타",
+  "sentiment": "중립",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "E05",
+  "text": "통신사 이벤트 덕분에 커피 쿠폰 잘 썼어요 ☕",
+  "category": "기타",
+  "sentiment": "긍정",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "E11",
+  "text": "사기 문자를 받았는데 신고는 어디로 하나요?",
+  "category": "기타",
+  "sentiment": "중립",
+  "urgency": "높음",
+  "note": "보안"
+ },
+ {
+  "id": "E14",
+  "text": "좋은 서비스 늘 감사합니다. 번창하세요!",
+  "category": "기타",
+  "sentiment": "긍정",
+  "urgency": "낮음",
+  "note": "대상이 특정되지 않은 칭찬"
+ },
+ {
+  "id": "E18",
+  "text": "멤버십 혜택이 예전보다 너무 줄었어요.",
+  "category": "기타",
+  "sentiment": "부정",
+  "urgency": "보통",
+  "note": ""
+ },
+ {
+  "id": "E19",
+  "text": "통신사 이름으로 온 설문조사 링크가 진짜인지 궁금해요.",
+  "category": "기타",
+  "sentiment": "중립",
+  "urgency": "보통",
+  "note": "사칭 의심"
+ },
+ {
+  "id": "E22",
+  "text": "스마트워치도 개통할 수 있나요?",
+  "category": "기타",
+  "sentiment": "중립",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "E24",
+  "text": "기부 포인트 제도 좋네요. 계속 해 주세요.",
+  "category": "기타",
+  "sentiment": "긍정",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "E26",
+  "text": "고객 행사 초대장을 받았는데 참석은 어떻게 신청하나요?",
+  "category": "기타",
+  "sentiment": "중립",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "E27",
+  "text": "통신사 광고 모델 너무 좋아요 ㅋㅋ",
+  "category": "기타",
+  "sentiment": "긍정",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "E39",
+  "text": "통신사에서 하는 무료 코딩 교실 신청하고 싶어요.",
+  "category": "기타",
+  "sentiment": "중립",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "E43",
+  "text": "매장 직원 채용 공고는 없나요?",
+  "category": "기타",
+  "sentiment": "중립",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "E44",
+  "text": "이벤트 참여했다가 개인정보만 뺏긴 기분이에요.",
+  "category": "기타",
+  "sentiment": "부정",
+  "urgency": "보통",
+  "note": ""
+ },
+ {
+  "id": "E45",
+  "text": "통신사 캐릭터 인형 어디서 살 수 있어요? 너무 귀여워요",
+  "category": "기타",
+  "sentiment": "긍정",
+  "urgency": "낮음",
+  "note": ""
+ },
+ {
+  "id": "E48",
+  "text": "안내 문자에 링크가 있는데 눌러도 되나요?",
+  "category": "기타",
+  "sentiment": "중립",
+  "urgency": "보통",
+  "note": "보안"
+ }
+]

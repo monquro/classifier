@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>고객 한마디 분류기</title>
+<meta name="description" content="고객 문의 한 줄을 넣으면 분류·감정·긴급도를 붙입니다. 기준은 사람이 정했습니다.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="app">
+
+  <header class="top">
+    <div class="badge">2주차 · 목업</div>
+    <h1>고객 한마디 분류기</h1>
+    <p class="muted">문의 한 줄을 넣으면 <b>분류 · 감정 · 긴급도</b>를 붙입니다.
+      기준은 <b>사람이 정했고</b>, AI는 그 기준을 따릅니다.</p>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button role="tab" data-tab="try" aria-selected="true">분류해 보기</button>
+    <button role="tab" data-tab="score" aria-selected="false">채점</button>
+    <button role="tab" data-tab="rules" aria-selected="false">기준</button>
+  </nav>
+
+  <!-- 분류해 보기 ─────────────────────────────── -->
+  <section id="tab-try" class="panel">
+    <label for="input" class="label">고객 문의</label>
+    <textarea id="input" rows="4" placeholder="예) 앱 로그인이 사흘째 안 돼요. 고쳐지긴 하나요?"></textarea>
+    <div class="row">
+      <button id="btn-sample" class="ghost">예시 문장 넣기</button>
+      <button id="btn-classify" class="primary">분류하기</button>
+    </div>
+
+    <div id="sent" class="sent" hidden>
+      <div class="label">AI에 보낸 문장 <span class="muted small">— 내 컴퓨터에서 가린 뒤</span></div>
+      <p id="sent-text"></p>
+      <p id="sent-found" class="small"></p>
+    </div>
+
+    <div id="result" hidden>
+      <div class="card" id="card-main">
+        <div class="by" id="main-by"></div>
+        <div class="chips" id="main-chips"></div>
+        <p class="reason" id="main-reason"></p>
+      </div>
+      <div class="card sub" id="card-rule">
+        <div class="by">규칙이라면</div>
+        <div class="chips" id="rule-chips"></div>
+        <p class="reason small" id="rule-reason"></p>
+      </div>
+      <p id="note" class="note" hidden></p>
+    </div>
+  </section>
+
+  <!-- 채점 ───────────────────────────────────── -->
+  <section id="tab-score" class="panel" hidden>
+    <p class="muted">정답을 붙여 둔 <b>100건</b>으로 채점합니다. 정답도 사람이 붙였습니다.</p>
+    <div class="row">
+      <button id="btn-score-rule" class="primary">규칙으로 채점</button>
+      <button id="btn-score-ai" class="ghost">AI로 채점</button>
+    </div>
+    <p id="score-msg" class="note" hidden></p>
+
+    <table id="score-table" class="score" hidden>
+      <thead><tr><th></th><th>규칙</th><th>AI</th></tr></thead>
+      <tbody>
+        <tr><th>분류</th><td data-k="rule-category">—</td><td data-k="ai-category">—</td></tr>
+        <tr><th>감정</th><td data-k="rule-sentiment">—</td><td data-k="ai-sentiment">—</td></tr>
+        <tr><th>긴급도</th><td data-k="rule-urgency">—</td><td data-k="ai-urgency">—</td></tr>
+        <tr><th>셋 다 맞음</th><td data-k="rule-all">—</td><td data-k="ai-all">—</td></tr>
+      </tbody>
+    </table>
+
+    <div id="wrong" hidden>
+      <h3>틀린 문장 <span id="wrong-who" class="muted small"></span></h3>
+      <ol id="wrong-list" class="wrong"></ol>
+    </div>
+    <button id="btn-download" class="ghost" hidden>AI 채점 결과 내려받기</button>
+  </section>
+
+  <!-- 기준 ───────────────────────────────────── -->
+  <section id="tab-rules" class="panel" hidden>
+    <p id="owner" class="note"></p>
+    <h3>분류</h3>
+    <table class="crit"><tbody id="crit-cats"></tbody></table>
+    <p class="small"><b>여러 분류에 걸치면</b> <span id="crit-priority"></span></p>
+    <p class="small muted" id="crit-priority-reason"></p>
+    <h3>감정</h3>
+    <p class="small" id="crit-sent"></p>
+    <h3>긴급도</h3>
+    <p class="small" id="crit-urg"></p>
+  </section>
+
+  <footer class="fineprint">
+    문장은 모두 만들어낸 것입니다. 실제 고객은 없습니다.
+    AI에 보내기 전 전화번호·이름·생년월일·주소를 <b>브라우저 안에서</b> 가립니다.
+  </footer>
+</main>
+
+<script src="rules.js"></script>
+<script src="mask.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+:root {
+  --bg: #f6f7f9; --panel: #ffffff; --ink: #14171c; --body: #3a404b; --dim: #7c838f;
+  --line: #e3e6eb; --accent: #4f46e5; --accent-soft: #eef0ff;
+  --ok: #2e7d32; --ok-soft: #e9f5ea; --warn: #b26a00; --warn-soft: #fdf3e3;
+  --bad: #c62828; --bad-soft: #fdecec;
+  --radius: 12px;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--body);
+  font-family: Pretendard, "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased; line-height: 1.6;
+}
+#app { max-width: 640px; margin: 0 auto; padding: 20px 16px 48px; }
+h1 { font-size: 24px; color: var(--ink); margin: 6px 0 4px; letter-spacing: -0.4px; }
+h3 { font-size: 15px; color: var(--ink); margin: 22px 0 8px; }
+.badge { display: inline-block; font-size: 11px; font-weight: 700; color: var(--accent);
+  background: var(--accent-soft); padding: 3px 9px; border-radius: 999px; }
+.muted { color: var(--dim); } .small { font-size: 13px; }
+.top p { margin: 4px 0 16px; }
+
+.tabs { display: flex; gap: 6px; background: var(--panel); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 5px; margin-bottom: 14px; }
+.tabs button { flex: 1; border: 0; background: transparent; padding: 9px 4px; border-radius: 8px;
+  font: inherit; font-weight: 700; font-size: 14px; color: var(--dim); cursor: pointer; }
+.tabs button[aria-selected="true"] { background: var(--accent-soft); color: var(--accent); }
+
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 16px; }
+.label { font-size: 12px; font-weight: 700; color: var(--dim); margin-bottom: 6px; display: block; }
+textarea { width: 100%; font: inherit; font-size: 15px; padding: 12px; border: 1px solid var(--line);
+  border-radius: 10px; resize: vertical; background: #fff; color: var(--ink); }
+textarea:focus { outline: 2px solid var(--accent-soft); border-color: var(--accent); }
+.row { display: flex; gap: 8px; margin: 10px 0 4px; }
+button.primary, button.ghost { flex: 1; font: inherit; font-weight: 700; font-size: 14px;
+  padding: 11px 12px; border-radius: 10px; cursor: pointer; }
+button.primary { background: var(--accent); color: #fff; border: 1px solid var(--accent); }
+button.ghost { background: #fff; color: var(--ink); border: 1px solid var(--line); }
+button:disabled { opacity: .5; cursor: default; }
+
+.sent { margin-top: 14px; padding: 12px; border-radius: 10px; background: #fafbfc;
+  border: 1px dashed var(--line); }
+.sent p { margin: 4px 0 0; color: var(--ink); }
+.tag { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 7px; border-radius: 6px;
+  background: var(--warn-soft); color: var(--warn); margin: 2px 4px 0 0; }
+
+.card { margin-top: 12px; padding: 14px; border-radius: var(--radius); border: 1px solid var(--line);
+  background: #fff; box-shadow: 0 1px 2px rgba(20,23,28,.04); }
+.card.sub { background: #fafbfc; }
+.by { font-size: 11px; font-weight: 800; letter-spacing: .06em; color: var(--dim); margin-bottom: 8px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-size: 13px; font-weight: 700; padding: 5px 10px; border-radius: 8px;
+  background: var(--accent-soft); color: var(--accent); }
+.chip.부정, .chip.높음 { background: var(--bad-soft); color: var(--bad); }
+.chip.긍정, .chip.낮음 { background: var(--ok-soft); color: var(--ok); }
+.chip.중립, .chip.보통 { background: #f1f2f4; color: var(--body); }
+.reason { margin: 10px 0 0; font-size: 14px; color: var(--body); }
+.note { margin: 12px 0 0; padding: 10px 12px; border-radius: 10px; background: var(--warn-soft);
+  color: var(--warn); font-size: 13px; }
+
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+table.score { margin-top: 14px; }
+table.score th, table.score td { padding: 10px 8px; border-bottom: 1px solid var(--line); text-align: left; }
+table.score td { font-variant-numeric: tabular-nums; font-weight: 700; color: var(--ink); }
+table.score thead th { font-size: 12px; color: var(--dim); }
+table.crit td { padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; font-size: 13px; }
+table.crit td:first-child { font-weight: 800; color: var(--ink); white-space: nowrap; }
+
+ol.wrong { padding-left: 18px; font-size: 13px; }
+ol.wrong li { margin: 0 0 10px; }
+ol.wrong .t { color: var(--ink); }
+ol.wrong .d { color: var(--dim); }
+
+.fineprint { margin-top: 18px; font-size: 12px; color: var(--dim); text-align: center; }
