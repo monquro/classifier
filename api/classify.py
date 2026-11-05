@@ -25,7 +25,7 @@ from http.server import BaseHTTPRequestHandler
 #   2.5 계열은 예전 사용자에게만 열려 있다(2026-09). Vercel 환경 변수 GEMINI_MODEL 로 바꿀 수 있다.
 MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.8-flash")
 ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-TIMEOUT = 20
+TIMEOUT = 60
 MAX_TEXTS = 20
 MAX_LEN = 400
 
