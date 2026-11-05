@@ -17,6 +17,7 @@
 """
 import json
 import os
+import time
 import urllib.error
 import urllib.request
 from http.server import BaseHTTPRequestHandler
@@ -26,6 +27,7 @@ from http.server import BaseHTTPRequestHandler
 MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.8-flash")
 ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 TIMEOUT = 60
+RETRY_WAITS = [2, 5]   # 다시 하기 전에 기다리는 초 — 두 번까지
 MAX_TEXTS = 20
 MAX_LEN = 400
 
@@ -68,8 +70,16 @@ def call_gemini(key, prompt):
     req = urllib.request.Request(
         ENDPOINT.format(model=MODEL), data=body, method="POST",
         headers={"Content-Type": "application/json", "x-goog-api-key": key})
-    with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
-        data = json.loads(r.read().decode("utf-8"))
+    # 503(붐빔)·500 은 잠깐 뒤 다시 하면 대개 된다. 시간 초과는 다시 하지 않는다 — 기다림만 길어진다.
+    for wait in RETRY_WAITS + [None]:
+        try:
+            with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
+                data = json.loads(r.read().decode("utf-8"))
+            break
+        except urllib.error.HTTPError as e:
+            if wait is None or e.code not in (500, 503):
+                raise
+            time.sleep(wait)
     text = data["candidates"][0]["content"]["parts"][0]["text"]
     return json.loads(text)
 
@@ -114,6 +124,8 @@ class handler(BaseHTTPRequestHandler):
             items = call_gemini(key, build_prompt(texts, crit))
             return self._send({"results": clean(items, len(texts)), "model": MODEL})
         except urllib.error.HTTPError as e:
-            return self._send({"results": None, "reason": f"AI 호출 실패 ({e.code}) — 모델 이름·한도를 확인"})
+            why = {404: "모델 이름을 확인", 429: "무료 한도를 넘음 — 잠시 뒤 다시",
+                   500: "Gemini 쪽 오류 — 잠시 뒤 다시", 503: "Gemini가 붐빔 — 잠시 뒤 다시"}
+            return self._send({"results": None, "reason": f"AI 호출 실패 ({e.code}) — {why.get(e.code, '모델 이름·한도를 확인')}"})
         except Exception as e:  # noqa: BLE001
             return self._send({"results": None, "reason": f"AI 호출 실패 — {type(e).__name__}"})
