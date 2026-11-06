@@ -17,6 +17,14 @@
       기준은 <b>사람이 정했고</b>, AI는 그 기준을 따릅니다.</p>
   </header>
 
+  <div class="model">
+    <label for="model-select" class="label">AI 모델</label>
+    <select id="model-select"></select>
+    <input id="model-custom" type="text" placeholder="모델 이름 — 예) 가격표에 적힌 이름 그대로"
+      autocomplete="off" spellcheck="false" maxlength="64" hidden>
+    <p id="model-now" class="small muted"></p>
+  </div>
+
   <nav class="tabs" role="tablist">
     <button role="tab" data-tab="try" aria-selected="true">분류해 보기</button>
     <button role="tab" data-tab="score" aria-selected="false">채점</button>
@@ -63,7 +71,7 @@
     <p id="score-msg" class="note" hidden></p>
 
     <table id="score-table" class="score" hidden>
-      <thead><tr><th></th><th>규칙</th><th>AI</th></tr></thead>
+      <thead><tr><th></th><th>규칙</th><th id="ai-head">AI</th></tr></thead>
       <tbody>
         <tr><th>분류</th><td data-k="rule-category">—</td><td data-k="ai-category">—</td></tr>
         <tr><th>감정</th><td data-k="rule-sentiment">—</td><td data-k="ai-sentiment">—</td></tr>

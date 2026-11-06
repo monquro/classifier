@@ -19,6 +19,14 @@ h3 { font-size: 15px; color: var(--ink); margin: 22px 0 8px; }
 .muted { color: var(--dim); } .small { font-size: 13px; }
 .top p { margin: 4px 0 16px; }
 
+.model { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 12px 14px; margin-bottom: 10px; }
+.model select, .model input { width: 100%; font: inherit; font-size: 14px; padding: 9px 10px;
+  border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--ink); }
+.model input { margin-top: 6px; }
+.model select:focus, .model input:focus { outline: 2px solid var(--accent-soft); border-color: var(--accent); }
+.model p { margin: 6px 0 0; overflow-wrap: anywhere; }
+
 .tabs { display: flex; gap: 6px; background: var(--panel); border: 1px solid var(--line);
   border-radius: var(--radius); padding: 5px; margin-bottom: 14px; }
 .tabs button { flex: 1; border: 0; background: transparent; padding: 9px 4px; border-radius: 8px;
